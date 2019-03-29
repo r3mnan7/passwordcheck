@@ -46,7 +46,7 @@ function sendmail{
     # Data needed to make the API request. 
     # These variables correspond to those of a standard email (to, from, etc...)
     $data = @{
-      from = "Password Bot <[MAILGUN EMAIL ADDRESS HERE]"; # from = "Sender Name <sender email address>"
+      from = "Password Bot <[MAILGUN EMAIL ADDRESS HERE]>"; # from = "Sender Name <sender email address>"
 	    to = $email;
 	    subject = "Domain Password Expiration Notice";
 	    text = $message
