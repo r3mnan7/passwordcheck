@@ -7,7 +7,10 @@ An e-mail notification is sent to users whose password expires within 7 days. Us
 *Note: You will need your own Mailgun account to make this work, or feel free to fork/branch and add your delivery method.*
 
 ## **Use**
-Password check is designed to be run as a scheduled task. 
+Password check is designed to be run as a scheduled task.
+
+### Inform Mode
+When run with the -inform switch, the script will send a report of ALL users expiring in the next $warndays days to the $informemail rather than sending messages to users.
 
 The script needs only enough permission to read the DisplayName, EmailAddress, and msDS-UserPasswordExpiryTimeComputed attributes
 
