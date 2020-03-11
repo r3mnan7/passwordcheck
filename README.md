@@ -10,9 +10,14 @@ An e-mail notification is sent to users whose password expires within 7 days. Us
 Password check is designed to be run as a scheduled task.
 
 ### Inform Mode
-When run with the -inform switch, the script will send a report of ALL users expiring in the next $warndays days to the $informemail rather than sending messages to users.
+By default, password check runs in "user mode" which means it alerts users according to the script. When run with the -inform switch, the script will send a report of ALL users expiring in the next $warndays days to the $informemail rather than sending messages to users.
 
+`c:\users\myself\documents\passwordcheck.ps1 -inform`
+
+### Permissions
 The script needs only enough permission to read the DisplayName, EmailAddress, and msDS-UserPasswordExpiryTimeComputed attributes
+
+### Configuration
 
 You will need to fill in the following data in order to make this function:
 
