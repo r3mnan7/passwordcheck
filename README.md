@@ -14,8 +14,14 @@ By default, password check runs in "user mode" which means it alerts users accor
 
 `c:\users\myself\documents\passwordcheck.ps1 -inform`
 
+### Test Mode
+Allows you to specify an e-mail address to send a test expiration notice to. No error handling built in so make sure the e-mail address is correct before you fire it off :D
+
+`c:\users\myself\documents\passwordcheck.ps1 -test nukelearghost@github.com`
+
+
 ### Permissions
-The script needs only enough permission to read the DisplayName, EmailAddress, and msDS-UserPasswordExpiryTimeComputed attributes
+The script needs only enough permission to read the DisplayName, EmailAddress, and msDS-UserPasswordExpiryTimeComputed attributes in AD
 
 ### Configuration
 
